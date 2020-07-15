@@ -135,6 +135,8 @@ p span {
 }
 .banner .banner__text .banner__description {
   margin: 1em 0 2em 0;
+  color: black;
+  text-align: center;
 }
 .banner .banner__picture {
   width: 100vw;
@@ -464,6 +466,23 @@ p span {
 .pricing .pricing__article .pricing__amount {
   font-size: 0.75em;
   font-weight: bold;
+}
+.pricing .pricing__article .icon {
+  display: inline-block;
+  stroke-width: 2px;
+  height: 0.7em;
+  width: 0.7em;
+  background-size: cover;
+}
+.pricing .pricing__article .icon-check {
+  background-image: url(../images/Check.svg);
+  -webkit-filter: invert(80%) sepia(68%) saturate(382%) hue-rotate(95deg) brightness(93%) contrast(86%);
+          filter: invert(80%) sepia(68%) saturate(382%) hue-rotate(95deg) brightness(93%) contrast(86%);
+}
+.pricing .pricing__article .icon-close {
+  background-image: url(../images/Close.svg);
+  -webkit-filter: invert(42%) sepia(87%) saturate(471%) hue-rotate(296deg) brightness(88%) contrast(111%);
+          filter: invert(42%) sepia(87%) saturate(471%) hue-rotate(296deg) brightness(88%) contrast(111%);
 }
 .pricing .pricing__article div {
   display: flex;

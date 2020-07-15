@@ -123,6 +123,8 @@ p {
         align-items: center;
         .banner__description {
             margin: 1em 0 2em 0;
+            color: black;
+            text-align: center;
         }
     }
     .banner__picture {
@@ -430,6 +432,27 @@ p {
         .pricing__amount {
             font-size: 0.75em;
             font-weight: bold;
+        }
+        // .pricing__check {
+        //     display: inline-block;
+            
+            
+        //     fill: $basic-primary;
+        // }
+        .icon {
+            display: inline-block;
+            stroke-width: 2px;
+            height: 0.7em;
+            width: 0.7em;
+            background-size: cover;
+          }
+        .icon-check {
+            background-image: url(../images/Check.svg);
+            filter: invert(80%) sepia(68%) saturate(382%) hue-rotate(95deg) brightness(93%) contrast(86%);
+        }
+        .icon-close {
+            background-image: url(../images/Close.svg);
+            filter: invert(42%) sepia(87%) saturate(471%) hue-rotate(296deg) brightness(88%) contrast(111%);
         }
     }
     .pricing__article div {
