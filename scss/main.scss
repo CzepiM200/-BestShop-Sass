@@ -1,5 +1,7 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 }
 
 .container {
-    padding: 0 15px;
+    padding: 0 30px;
     min-width: 200px;
     @media screen and (min-width: $desktop-size) {
         width: $desktop-size;
@@ -27,6 +29,18 @@ h2 {
     font-size: $secondary-header;
     text-align: center;
     font-weight: 400;
+}
+
+h3 {
+    font-size: $tertiary-header;
+    text-align: center;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: $tertiary-header;
+    text-align: center;
+    font-size: 1.25em;
 }
 
 p {
@@ -127,11 +141,19 @@ p {
 }
 
 .popularity {
+    @media screen and (min-width: $desktop-size) {
+        padding-bottom: 5%;
+    }
     border-bottom: 1px solid #00000029;
     .popularity__content {
         margin-top: 1em;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: $desktop-size) {
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0 10%;
+        }
         .popularity__article {
             margin: 1em 0;
             display: flex;
@@ -167,5 +189,306 @@ p {
                 transform: translateX(-0.8em);
             }
         }
+    }
+}
+
+.advantages {
+    @media screen and (min-width: $desktop-size) {
+        padding-top: 5%;
+    }
+    background-color: #F7F7F7;
+    .container {
+        padding: 30px 30px;
+    }
+    .advantages__article {
+        font-size: 14px;
+        padding: 30px 30px;
+        background-color: white;
+        border: 1px solid #00000029;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        @media screen and (min-width: $desktop-size) {
+            display: flex;
+            font-size: 16px;
+            padding: 2%;
+        }
+        h3 {
+            padding: 0.75em;
+            @media screen and (min-width: $desktop-size) {
+                text-align: left;
+                padding: 0 25% 2% 5%;
+                font-size: 270%;
+            }
+        }
+        p {
+            color: black;
+            @media screen and (min-width: $desktop-size) {
+                padding: 0 20% 8% 5%;
+                font-size: 120%;
+            }
+        }
+        .line {
+            @media screen and (min-width: $desktop-size) {
+                border: 2px solid black;
+                width: 50%;
+                border-radius: 2em;
+                margin-left: 5%;
+            } 
+        }
+    }
+
+    .advantages__article_basic {
+        position: relative;
+        
+        @media screen and (min-width: $desktop-size) {
+            flex-direction: row-reverse;
+            .line {
+                border-color: $basic-primary;
+            }
+        }
+        .advantages__first {
+            padding: 10%;
+            @media screen and (min-width: $desktop-size) {
+                padding: 3%;
+            }
+            .advantages_image {
+                @media screen and (min-width: $desktop-size) {
+                    content: url(../images/Macbook2@2x.png);
+                    transform: translateY(5%);
+                }
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .advantages_figure {
+                position: relative;
+            }
+
+            .advantages_figure::before {
+                position: absolute;
+                content: "";
+                background-color: $basic-primary;
+                border-radius: 40%;
+                width: 40%;
+                height: 60%;
+                transform: translateX(150%) translateY(-15%) rotate(-45deg);
+                @media screen and (min-width: $desktop-size) {
+                    border-radius: 20%;
+                    transform: translateX(150%) translateY(-10%) rotate(-45deg);
+                }
+            }
+
+            
+        }
+
+        .adventages__second {
+            @media screen and (min-width: $desktop-size) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+
+    .advantages__article_professional {
+        @media screen and (min-width: $desktop-size) {
+            .line {
+                border-color: $professional-secondary;
+            }
+            h3 {
+                padding-right: 50%;
+            }
+        }
+        .advantages__first {
+            padding: 2em;
+            .advantages_image {
+                @media screen and (min-width: $desktop-size) {
+                    content: url(../images/iPhone2@2x.png);
+                }
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .advantages_figure {
+                position: relative;
+                margin: 0 auto;
+                transform: translateX(15%);
+                @media screen and (min-width: $desktop-size) {
+                    transform: translateX(0);
+                }
+            }
+
+            .advantages_figure::before {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                content: "";
+                background-color: $professional-secondary;
+                border-radius: 50%;
+                width: 70%;
+                padding-top: 70%;
+            }
+        }
+
+        .adventages__second {
+            @media screen and (min-width: $desktop-size) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+
+    .advantages__article_premium {
+        @media screen and (min-width: $desktop-size) {
+            border: none;
+            background-color: #F7F7F7;
+            padding: 0%;
+            .line {
+                border-color: $premium-primary;
+                margin-bottom: 4%;
+            }
+
+            h3 {
+                margin-top: 4%;
+            }
+        }
+
+        .adventages__second {
+            background-color: $premium-primary;
+            border-radius: 0.3em;
+            margin-top: 1em;
+            @media screen and (min-width: $desktop-size) {
+                margin-top: 0;
+                padding-left: 15%;
+            }
+            .advantages_image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform: translateY(20%) translateX(-10%);
+                @media screen and (min-width: $desktop-size) {
+                    content: url(../images/Trumpet@2x.png);
+                    transform: translateY(45%) translateX(-35%);
+                }
+            }
+        }
+
+        .advantages__first {
+            @media screen and (min-width: $desktop-size) {
+                padding: 2%;
+                background-color: white;
+                border: 1px solid #00000029;
+                border-radius: 5px;
+                margin-right: 5%;
+            }
+        }
+    }
+}
+
+.pricing {
+    padding: 5% 0;
+    ul {
+        list-style-type: none;
+        padding-bottom: 1.5em;
+        li {
+            font-family: "Open Sans", Helvetica, sans-serif;
+            padding: 0.625em;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        padding: 1em 3.5625em;
+        border-radius: 1.4375em;
+    }
+    h3 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .pricing__article {
+        border: 1px solid black;
+        width: 100%;
+        border-radius: 1em;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        .pricing__type {
+            text-align: center;
+        }
+        .pricing__price {
+            font-size: 2.875em;
+            font-family: "Open Sans", Helvetica, sans-serif;
+            font-weight: 300;
+        }
+        .pricing__amount {
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+    }
+    .pricing__article div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pricing__button {
+        transform: translateY(-50%);
+    }
+    & div:nth-child(2),
+    & div:nth-child(3),
+    & div:nth-child(4)
+     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing__article_basic {
+        border-color: $basic-primary;
+        margin: 0 5%;
+        .pricing__price {
+            color: $basic-primary;
+        }
+    }
+    .pricing__button_basic {
+        background-color: $basic-primary;
+    }
+    .container_basic {
+        padding: 0 7%;
+    }
+
+    .pricing__article_professional {
+        border-color: $professional-secondary;
+        box-shadow: 8px 8px 41px -9px rgba(8,166,228,0.36);
+        .pricing__price {
+            color: $professional-secondary;
+        }
+    }
+    .pricing__button_professional {
+        background-color: $professional-secondary;
+    }
+    .container_professional {
+        padding: 0 2%;
+    }
+
+    .pricing__article_premium {
+        border-color: $premium-primary;
+        .pricing__price {
+            color: $premium-primary;
+        }
+    }
+    .pricing__button_premium {
+        background-color: $premium-primary;
+    }
+    .container_premium {
+        padding: 0 7%;
     }
 }
