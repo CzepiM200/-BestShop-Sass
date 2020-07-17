@@ -7,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
     cursor: default;
+    font-family: Raleway;
+}
+
+body {
+    min-width: 320px;
 }
 
 .container {
@@ -378,7 +383,7 @@ body {
                     transform: translateY(15%) translateX(-5%);
                 }
                 @media screen and (min-width: $laptop-size) {
-                    transform: translateY(55%) translateX(-35%);
+                    transform: translateY(35%) translateX(-35%);
                 }
             }
         }
@@ -552,6 +557,158 @@ body {
         flex-grow: 1;
         @media screen and (min-width: $laptop-size) {
             padding: 5% 2%;
+        }
+    }
+}
+
+/* CONTACT */
+
+.contact {
+    .container {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $laptop-size) {
+            flex-direction: row;
+            justify-content: center;
+        }
+        .contact__info {
+            @media screen and (min-width: $laptop-size) {
+                width: 30%;
+            }
+            .contact__title {
+                font-size: 40px;
+                text-align: left;
+                margin-bottom: 0.1em;
+            }
+            .contact__text {
+                font-size: 1em;
+                color: black;
+                font-weight: 600;
+                
+            }
+            .contact__details {
+                margin-top: 2em;
+                font: "Open Sans";
+                @media screen and (min-width: $desktop-size) {
+                    display: flex;
+                }
+                img {
+                    display: inline-block;
+                    margin-right: 0.3em;
+                }
+                p {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 0.5em;
+                    @media screen and (min-width: $desktop-size) {
+                        margin-right: 1em;
+                    }
+                }
+                p span {
+                    font-family: "Open Sans";
+                    font-size: 1em;
+                    align-self: center;
+                    color: $info-text;
+                    font-weight: 400;
+                }
+            }
+        }
+        .contact__form {
+            margin-top: 2em;
+            @media screen and (min-width: $laptop-size) {
+                width: 30%;
+                margin: 0 0 0 5%;
+            }
+            form {
+                label {
+                    display: inline-block;
+                    color: $professional-secondary;
+                    font-size: 0.6875em;
+                    font-weight: bold;
+                    letter-spacing: 0.3em;
+                    margin-bottom: 2em;
+                }
+                input {
+                    display: inline-block;
+                    border: none;
+                    border-bottom: 1px solid $contact-input;
+                    width: 100%;
+                    margin-bottom: 3em;
+                }
+
+                .contact__accept {
+                    display: flex;
+                    label {
+                        letter-spacing: 0;
+                        font-size: 0.75em;
+                        color: $contact-text;
+                        font-weight: 500;
+                    }
+                    input[type="checkbox"] {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        margin-right: 10px;
+                        height: 24px;
+                        min-width: 24px;
+                        max-width: 24px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        border-radius: 5px;
+                        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+                        background: white;
+                        outline: none;
+                        position: relative;
+                    }
+                    
+                    input[type="checkbox"]:checked {
+                        color: var(--color-professional);
+                    }
+                    
+                    input[type="checkbox"]:checked:after {
+                        content: "";
+                        width: 11px;
+                        height: 11px;
+                        background-image: url("../images/Checkmark.svg");
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 3em;
+    padding: 0.8em 0;
+    box-shadow: 0px -5px 40px $info-shadows;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        
+        .footer__first {
+            span {
+                font-size: 1.625em;
+                color: $professional-secondary;
+                @media screen and (min-width: $laptop-size) {
+                    line-height: 1.625em;
+                }
+            }
+            p {
+                font-size: 0.6875em;
+                color: $info-text;
+            }
+        }
+        .footer__second {
+            display: flex;
+            img {
+                margin: 0 0.4em;
+            }
         }
     }
 }

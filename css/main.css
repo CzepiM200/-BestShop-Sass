@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   cursor: default;
+  font-family: Raleway;
+}
+
+body {
+  min-width: 320px;
 }
 
 .container {
@@ -416,7 +421,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .advantages .advantages__article_premium .adventages__second .advantages_image {
-    transform: translateY(55%) translateX(-35%);
+    transform: translateY(35%) translateX(-35%);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -591,5 +596,154 @@ body {
   .pricing .container_premium {
     padding: 5% 2%;
   }
+}
+
+/* CONTACT */
+.contact .container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .contact .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact .container .contact__info {
+    width: 30%;
+  }
+}
+.contact .container .contact__info .contact__title {
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 0.1em;
+}
+.contact .container .contact__info .contact__text {
+  font-size: 1em;
+  color: black;
+  font-weight: 600;
+}
+.contact .container .contact__info .contact__details {
+  margin-top: 2em;
+  font: "Open Sans";
+}
+@media screen and (min-width: 1352px) {
+  .contact .container .contact__info .contact__details {
+    display: flex;
+  }
+}
+.contact .container .contact__info .contact__details img {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+.contact .container .contact__info .contact__details p {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 1352px) {
+  .contact .container .contact__info .contact__details p {
+    margin-right: 1em;
+  }
+}
+.contact .container .contact__info .contact__details p span {
+  font-family: "Open Sans";
+  font-size: 1em;
+  align-self: center;
+  color: #A5A5A5;
+  font-weight: 400;
+}
+.contact .container .contact__form {
+  margin-top: 2em;
+}
+@media screen and (min-width: 1024px) {
+  .contact .container .contact__form {
+    width: 30%;
+    margin: 0 0 0 5%;
+  }
+}
+.contact .container .contact__form form label {
+  display: inline-block;
+  color: #08A6E4;
+  font-size: 0.6875em;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  margin-bottom: 2em;
+}
+.contact .container .contact__form form input {
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #95989A;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.contact .container .contact__form form .contact__accept {
+  display: flex;
+}
+.contact .container .contact__form form .contact__accept label {
+  letter-spacing: 0;
+  font-size: 0.75em;
+  color: #707070;
+  font-weight: 500;
+}
+.contact .container .contact__form form .contact__accept input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+  height: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+  background: white;
+  outline: none;
+  position: relative;
+}
+.contact .container .contact__form form .contact__accept input[type=checkbox]:checked {
+  color: var(--color-professional);
+}
+.contact .container .contact__form form .contact__accept input[type=checkbox]:checked:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url("../images/Checkmark.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 3em;
+  padding: 0.8em 0;
+  box-shadow: 0px -5px 40px #00000029;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footer__first span {
+  font-size: 1.625em;
+  color: #08A6E4;
+}
+@media screen and (min-width: 1024px) {
+  .footer .container .footer__first span {
+    line-height: 1.625em;
+  }
+}
+.footer .container .footer__first p {
+  font-size: 0.6875em;
+  color: #A5A5A5;
+}
+.footer .container .footer__second {
+  display: flex;
+}
+.footer .container .footer__second img {
+  margin: 0 0.4em;
 }
 /*# sourceMappingURL=main.css.map */
