@@ -11,6 +11,7 @@
 .container {
   padding: 0 30px;
   min-width: 200px;
+  width: 100vw;
 }
 @media screen and (min-width: 1352px) {
   .container {
@@ -445,7 +446,7 @@ p span {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing h3 {
     padding: 0;
     padding-bottom: 3%;
@@ -460,12 +461,12 @@ p span {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .pricing__articles {
     display: flex;
   }
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .pricing__articles .pricing__features ul {
     display: flex;
     flex-direction: column;
@@ -482,7 +483,7 @@ p span {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .pricing__article {
     flex-direction: column;
   }
@@ -490,7 +491,7 @@ p span {
 .pricing .pricing__article .pricing__type {
   text-align: center;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .pricing__article .pricing__type {
     margin-bottom: 3.8125em;
   }
@@ -542,8 +543,9 @@ p span {
 }
 .pricing .container_basic {
   padding: 0 7%;
+  flex-grow: 1;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .container_basic {
     padding: 5% 2%;
   }
@@ -555,7 +557,7 @@ p span {
 .pricing .pricing__article_professional .pricing__price {
   color: #08A6E4;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .pricing__article_professional ul li {
     padding: 0.8em;
   }
@@ -565,6 +567,7 @@ p span {
 }
 .pricing .container_professional {
   padding: 0 2%;
+  flex-grow: 1;
 }
 .pricing .pricing__article_premium {
   border-color: #55DFB4;
@@ -577,8 +580,9 @@ p span {
 }
 .pricing .container_premium {
   padding: 0 7%;
+  flex-grow: 1;
 }
-@media screen and (min-width: 1352px) {
+@media screen and (min-width: 1024px) {
   .pricing .container_premium {
     padding: 5% 2%;
   }

@@ -13,6 +13,7 @@
 .container {
     padding: 0 30px;
     min-width: 200px;
+    width: 100vw;
     @media screen and (min-width: $desktop-size) {
         width: $desktop-size;
         margin: 0 auto;
@@ -411,7 +412,7 @@ p {
     h3 {
         padding-top: 5%;
         padding-bottom: 5%;
-        @media screen and (min-width: $desktop-size) {
+        @media screen and (min-width: $laptop-size) {
             padding: 0;
             padding-bottom: 3%;
         }
@@ -429,11 +430,11 @@ p {
             justify-content: center;
             align-items: center;
         }
-        @media screen and (min-width: $desktop-size) {
+        @media screen and (min-width: $laptop-size) {
             display: flex;
         }
         .pricing__features ul {
-            @media screen and (min-width: $desktop-size) {
+            @media screen and (min-width: $laptop-size) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -449,12 +450,12 @@ p {
         justify-content: center;
         justify-content: space-around;
         align-items: center;
-        @media screen and (min-width: $desktop-size) {
+        @media screen and (min-width: $laptop-size) {
             flex-direction: column;
         }
         .pricing__type {
             text-align: center;
-            @media screen and (min-width: $desktop-size) {
+            @media screen and (min-width: $laptop-size) {
                 margin-bottom: 3.8125em;
             }
         }
@@ -505,7 +506,8 @@ p {
     }
     .container_basic {
         padding: 0 7%;
-        @media screen and (min-width: $desktop-size) {
+        flex-grow: 1;
+        @media screen and (min-width: $laptop-size) {
             padding: 5% 2%;
         }
     }
@@ -518,7 +520,7 @@ p {
         }
         ul {
             li {
-                @media screen and (min-width: $desktop-size) {
+                @media screen and (min-width: $laptop-size) {
                     padding: 0.8em;
                 }
             }
@@ -529,6 +531,7 @@ p {
     }
     .container_professional {
         padding: 0 2%;
+        flex-grow: 1;
     }
 
     .pricing__article_premium {
@@ -542,7 +545,8 @@ p {
     }
     .container_premium {
         padding: 0 7%;
-        @media screen and (min-width: $desktop-size) {
+        flex-grow: 1;
+        @media screen and (min-width: $laptop-size) {
             padding: 5% 2%;
         }
     }
