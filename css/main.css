@@ -445,6 +445,33 @@ p span {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+@media screen and (min-width: 1352px) {
+  .pricing h3 {
+    padding: 0;
+    padding-bottom: 3%;
+  }
+}
+.pricing h4 {
+  padding: 10% 0;
+}
+.pricing .pricing__articles > div:nth-child(1), .pricing .pricing__articles > div:nth-child(2), .pricing .pricing__articles > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1352px) {
+  .pricing .pricing__articles {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1352px) {
+  .pricing .pricing__articles .pricing__features ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .pricing .pricing__article {
   border: 1px solid black;
   width: 100%;
@@ -455,8 +482,18 @@ p span {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 1352px) {
+  .pricing .pricing__article {
+    flex-direction: column;
+  }
+}
 .pricing .pricing__article .pricing__type {
   text-align: center;
+}
+@media screen and (min-width: 1352px) {
+  .pricing .pricing__article .pricing__type {
+    margin-bottom: 3.8125em;
+  }
 }
 .pricing .pricing__article .pricing__price {
   font-size: 2.875em;
@@ -493,12 +530,6 @@ p span {
 .pricing .pricing__button {
   transform: translateY(-50%);
 }
-.pricing div:nth-child(2), .pricing div:nth-child(3), .pricing div:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .pricing .pricing__article_basic {
   border-color: #FB3B64;
   margin: 0 5%;
@@ -512,12 +543,22 @@ p span {
 .pricing .container_basic {
   padding: 0 7%;
 }
+@media screen and (min-width: 1352px) {
+  .pricing .container_basic {
+    padding: 5% 2%;
+  }
+}
 .pricing .pricing__article_professional {
   border-color: #08A6E4;
   box-shadow: 8px 8px 41px -9px rgba(8, 166, 228, 0.36);
 }
 .pricing .pricing__article_professional .pricing__price {
   color: #08A6E4;
+}
+@media screen and (min-width: 1352px) {
+  .pricing .pricing__article_professional ul li {
+    padding: 0.8em;
+  }
 }
 .pricing .pricing__button_professional {
   background-color: #08A6E4;
@@ -536,5 +577,10 @@ p span {
 }
 .pricing .container_premium {
   padding: 0 7%;
+}
+@media screen and (min-width: 1352px) {
+  .pricing .container_premium {
+    padding: 5% 2%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
