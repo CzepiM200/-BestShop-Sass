@@ -15,12 +15,22 @@
                 <span class="navbar__logo-text">BestShop</span>
             </div>
             <nav class="navbar__navigation">
-                <ul class="navbar__menu">
-                    <li class="navbar__item">Why us</li>
-                    <li class="navbar__item">Benefits</li>
-                    <li class="navbar__item">Pricing</li>
-                    <li class="navbar__item">Contact</li>
-                </ul>
+                <input type="checkbox" class="navbar__toggler">
+                <div class="navbar__hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul class="navbar__menu">
+                                <li class="navbar__item">Why us</li>
+                                <li class="navbar__item">Benefits</li>
+                                <li class="navbar__item">Pricing</li>
+                                <li class="navbar__item">Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -175,6 +185,72 @@
             </div>
         </section>
 
+        <section class="calc">
+            <h2>Calculate how much you’ll pay</h2>
+            
+            <div class="calc__columns">
+              <form class="calc__form">
+                <div class="calc__input">
+                  <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+                </div>
+                <div class="calc__input">
+                  <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+                </div>
+                <div class="calc__select" id="package" data-value="">
+                  <div class="select__input">
+                    Choose package
+                  </div>
+            
+                  <ul class="select__dropdown d-none">
+                    <li data-value="Basic">Basic</li>
+                    <li data-value="Professional">Professional</li>
+                    <li data-value="Premium">Premium</li>
+                  </ul>
+                </div>
+                <label class="form__checkbox">
+                  <input type="checkbox" id="accounting"/>
+                  <p class="consent__text">Accounting</p>
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" id="terminal"/>
+                  <p class="consent__text">Rental of a payment terminal</p>
+                </label>
+              </form>
+            
+              <div class="calc__summary">
+                <ul>
+                  <li class="list__item d-none" data-id="products">
+                    <span class="item__type">Products</span>
+                    <span class="item__calc"></span>
+                    <span class="item__price">$0</span>
+                  </li>
+                  <li class="list__item d-none" data-id="orders">
+                    <span class="item__type">Orders</span>
+                    <span class="item__calc"></span>
+                    <span class="item__price">$0</span>
+                  </li>
+                  <li class="list__item d-none" data-id="package">
+                    <span class="item__type">Package</span>
+                    <span class="item__calc"></span>
+                    <span class="item__price">$0</span>
+                  </li>
+                  <li class="list__item d-none" data-id="accounting">
+                    <span class="item__type">Accounting</span>
+                    <span class="item__price">$0</span>
+                  </li>
+                  <li class="list__item d-none" data-id="terminal">
+                    <span class="item__type">Terminal</span>
+                    <span class="item__price">$0</span>
+                  </li>
+                </ul>
+                <div class="summary__total" id="total-price">
+                  <span>Total</span>
+                  <span class="total__price">$0</span>
+                </div>
+              </div>
+            </div>
+        </section>
+
         <section class="contact">
             <div class="container">
                 <article class="contact__info">
@@ -216,6 +292,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/calculator.js"></script>
 </body>
 
 </html>
