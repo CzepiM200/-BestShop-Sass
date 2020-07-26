@@ -14,23 +14,18 @@
             <div class="navbar__logo">
                 <span class="navbar__logo-text">BestShop</span>
             </div>
-            <nav class="navbar__navigation">
-                <input type="checkbox" class="navbar__toggler">
-                <div class="navbar__hamburger">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <div>
-                        <div>
-                            <ul class="navbar__menu">
-                                <li class="navbar__item">Why us</li>
-                                <li class="navbar__item">Benefits</li>
-                                <li class="navbar__item">Pricing</li>
-                                <li class="navbar__item">Contact</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="navbar__hamburger" id="hamburger">
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+            </div>
+            <nav class="navbar__navigation d-none" id="menu">
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#popularity">Why us</a></li>
+                    <li class="navbar__item"><a href="#advantages">Benefits</a></li>
+                    <li class="navbar__item"><a href="#pricing">Pricing</a></li>
+                    <li class="navbar__item"><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -47,7 +42,7 @@
             <div class="banner__picture"></div>
         </section>
 
-        <section class="popularity">
+        <section class="popularity" id="popularity">
             <div class="container">
                 <h2>The most popular sales platform in country</h2>
                 <div class="popularity__content">
@@ -76,7 +71,7 @@
             </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <div class="container">
                 <article class="advantages__article advantages__article_basic">
                     <div class="advantages__first">
@@ -117,7 +112,7 @@
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="container">
                 <h3>Pricing</h3>
             </div>
@@ -251,7 +246,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <article class="contact__info">
                     <h1 class="contact__title">Any questions?</h1>
@@ -293,6 +288,7 @@
         </div>
     </footer>
     <script src="./js/calculator.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 
 </html>
