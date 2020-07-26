@@ -113,6 +113,7 @@ p {
         align-self: center;
         height: 2em;
         width: 2em;
+        transition: 0.5s;
         @media screen and (min-width: $mobile-nav-medium-size) {
             display: none;
         }
@@ -127,6 +128,21 @@ p {
         }
     }
 
+    &__exit {
+        .navbar__line:nth-child(1) {
+            top: 50%;
+            transform: rotate(-405deg);
+        }
+        .navbar__line:nth-child(2) {
+            transform: scale(0);
+        }
+        .navbar__line:nth-child(3) {
+            // @include navbarLine(75%);
+            top: 50%;
+            transform: rotate(405deg);
+        }
+    }
+
     &__navigation {
         position: absolute;
         top: 165%;
@@ -135,6 +151,7 @@ p {
         margin: 0 auto;
         background-color: white;
         box-shadow: 0px 3px 6px #00000029;
+        transition: 0.5s;
         @media screen and (min-width: $mobile-nav-medium-size) {
             position: relative;
             width: fit-content;
@@ -184,8 +201,6 @@ p {
             }
         }
     }
-    @media screen and (min-width: $mobile-nav-medium-size) {
-    }
     .d-none {
         display: none; 
     }
@@ -194,8 +209,6 @@ p {
             display: block; 
         }
     }
-    
-
 }
 
 .banner {
