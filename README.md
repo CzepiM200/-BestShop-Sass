@@ -8,4 +8,8 @@ Calculator is implemented as a section. It allows user to choose package made fo
 Website is in written mobile first design. It scales properly for devices with higher and lower resolutions. This enables using the site on tablets and smartphones.
 
 ## GH Pages
-https://czepim200.github.io/BestShop-Sass/
+[https://czepim200.github.io/BestShop-Sass/](https://czepim200.github.io/best-shop-sass-website/)https://czepim200.github.io/best-shop-sass-website/
+
+## Screenshot
+![image](https://github.com/CzepiM200/best-shop-sass-website/assets/16826668/b4f5ee72-8f00-45c6-abe6-0595d96d8763)
+
